@@ -9,10 +9,13 @@
 <body>
 	<div id ="whole_page">
 		<div id ="header">The Horses Mouth</div>
+		<div id ="usr_nav">
+			<%= link_to_unless_current "Register", new_user_path  %>
+		</div>
 		<div id ="nav">
-	<%= link_to_unless_current "Home",		 :action => 'index'  %> |
-	<%= link_to_unless_current "About us",	 :action => 'about'  %> |
-	<%= link_to_unless_current "Help",		 :action => 'help'  %> |
+	<%= link_to_unless_current "Home", :action => "index"  %> |
+	<%= link_to_unless_current "About us", :action => "about"  %> |
+	<%= link_to_unless_current "Help", :action => "help"  %> 	
 	</div>
 	
 	<div id ="content">

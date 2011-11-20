@@ -1,4 +1,6 @@
 HorsesMouth::Application.routes.draw do
+  resources :users
+
   get "site/index"
 
   get "site/help"
